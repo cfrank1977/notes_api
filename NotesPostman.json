@@ -1,0 +1,211 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "2018-09-04T21:39:14Z",
+      "title": "dev-notes-app-2-api"
+    },
+    "host": "padydi5fn3.execute-api.us-east-2.amazonaws.com",
+    "basePath": "/dev",
+    "schemes": [
+      "https"
+    ],
+    "paths": {
+      "/billing": {
+        "post": {
+          "responses": {},
+          "security": [
+            {
+              "sigv4": []
+            }
+          ],
+          "x-postman-meta": {
+            "helperAttributes": {
+              "saveHelper": true,
+              "secretKey": "{{aws_secret_access_key}}",
+              "accessKey": "{{aws_access_key_id}}"
+            },
+            "headers": "Content-Type: application/json\n",
+            "currentHelper": "awsSigV4"
+          }
+        },
+        "options": {
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "200 response",
+              "headers": {
+                "Access-Control-Allow-Origin": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Methods": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Credentials": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Headers": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/notes": {
+        "get": {
+          "responses": {},
+          "security": [
+            {
+              "sigv4": []
+            }
+          ],
+          "x-postman-meta": {
+            "helperAttributes": {
+              "saveHelper": true,
+              "secretKey": "{{aws_secret_access_key}}",
+              "accessKey": "{{aws_access_key_id}}"
+            },
+            "headers": "Content-Type: application/json\n",
+            "currentHelper": "awsSigV4"
+          }
+        },
+        "post": {
+          "responses": {},
+          "security": [
+            {
+              "sigv4": []
+            }
+          ],
+          "x-postman-meta": {
+            "helperAttributes": {
+              "saveHelper": true,
+              "secretKey": "{{aws_secret_access_key}}",
+              "accessKey": "{{aws_access_key_id}}"
+            },
+            "headers": "Content-Type: application/json\n",
+            "currentHelper": "awsSigV4"
+          }
+        },
+        "options": {
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "200 response",
+              "headers": {
+                "Access-Control-Allow-Origin": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Methods": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Credentials": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Headers": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/notes/{id}": {
+        "get": {
+          "responses": {},
+          "security": [
+            {
+              "sigv4": []
+            }
+          ],
+          "x-postman-meta": {
+            "helperAttributes": {
+              "saveHelper": true,
+              "secretKey": "{{aws_secret_access_key}}",
+              "accessKey": "{{aws_access_key_id}}"
+            },
+            "headers": "Content-Type: application/json\n",
+            "currentHelper": "awsSigV4"
+          }
+        },
+        "put": {
+          "responses": {},
+          "security": [
+            {
+              "sigv4": []
+            }
+          ],
+          "x-postman-meta": {
+            "helperAttributes": {
+              "saveHelper": true,
+              "secretKey": "{{aws_secret_access_key}}",
+              "accessKey": "{{aws_access_key_id}}"
+            },
+            "headers": "Content-Type: application/json\n",
+            "currentHelper": "awsSigV4"
+          }
+        },
+        "delete": {
+          "responses": {},
+          "security": [
+            {
+              "sigv4": []
+            }
+          ],
+          "x-postman-meta": {
+            "helperAttributes": {
+              "saveHelper": true,
+              "secretKey": "{{aws_secret_access_key}}",
+              "accessKey": "{{aws_access_key_id}}"
+            },
+            "headers": "Content-Type: application/json\n",
+            "currentHelper": "awsSigV4"
+          }
+        },
+        "options": {
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "200 response",
+              "headers": {
+                "Access-Control-Allow-Origin": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Methods": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Credentials": {
+                  "type": "string"
+                },
+                "Access-Control-Allow-Headers": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securityDefinitions": {
+      "sigv4": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header",
+        "x-amazon-apigateway-authtype": "awsSigv4"
+      }
+    }
+  }
